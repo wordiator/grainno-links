@@ -174,6 +174,25 @@
       color: rgba(240,236,255,0.6);
     }
 
+    /* GBT app / orange button — matches the app & landing page brand accent */
+    .btn-gbt {
+      background: linear-gradient(135deg, #ffa409 0%, #ff8c2e 100%);
+      color: #1a1002;
+      box-shadow:
+        0 0 16px rgba(255, 164, 9, 0.35),
+        0 4px 24px rgba(255, 164, 9, 0.2),
+        inset 0 1px 0 rgba(255,255,255,0.15);
+    }
+    .btn-gbt:hover {
+      transform: translateY(-2px);
+      box-shadow:
+        0 0 28px rgba(255, 164, 9, 0.55),
+        0 8px 32px rgba(255, 164, 9, 0.3),
+        inset 0 1px 0 rgba(255,255,255,0.2);
+    }
+    .btn-gbt:active { transform: translateY(0); }
+    .btn-gbt .btn-icon { background: rgba(255,255,255,0.2); }
+
     /* website / purple button */
     .btn-website {
       background: linear-gradient(135deg, #863bff 0%, #5b24b5 100%);
@@ -401,8 +420,8 @@
       </span>
     </button>
 
-    <!-- 3. GBT App (inactive) -->
-    <button class="btn btn-inactive" onclick="showToast()">
+    <!-- 3. GBT App (active) -->
+    <a class="btn btn-gbt" href="https://grainnofoods.com/bodytransformation" target="_blank" rel="noopener">
       <span class="btn-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
           <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
@@ -413,8 +432,7 @@
         <span class="btn-label">GBT App</span>
         <span class="btn-sub">Grainno Body Transformation</span>
       </span>
-      <span class="badge">Launching Soon</span>
-    </button>
+    </a>
 
   </div>
 
